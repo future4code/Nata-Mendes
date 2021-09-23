@@ -1,0 +1,12 @@
+quando for entrar para fazer os exercicios
+
+01) - Entra na pasta "Branch GitHub Master"
+
+02) - Clica com o botão direito do mouse em qq área branca - depois
+	clica em "Git Bash here"
+
+03) - Verifica se a branch master aparece no final da linha:
+	"Windows@DESKTOP-5CTPKQC MINGW64 ~/Documents/GitHub/Nata-Mendes (master)"
+
+04) - ja pode começar a fazer o exercicio.
+

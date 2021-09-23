@@ -1,0 +1,47 @@
+primeiro: ele pede para entrar no github web e ver se os PR (Pull Request) que vc abriu ja foi aprovado, Como vc não fez ainda não tem.
+	se vc tivesse feito ia aparecer naquela tela. ok??
+Segundo:git status (pode digitar vc ali no git). entendi - Ta tudo ok, se tivesse algo errado ia aparecer vermelho e se tivesse algum arquivo para enviar ou receber
+	ia estar verde..
+Terceiro: git branch para confirmar se vc esta na master. ela vai aparecer de cor diferente. "verde" se tivesse outra ia aparecer em azul claro acho.(digita la no git)
+Quarto: Se vc não estiver, mas agora vc está, mas se não tivese, ia aparecer o nome da branch q vc está atrás da linha. mas se vc estivesse em outra branch
+vc teria que digitar git checkou master. mas agora não precisa pq vc ta no lugar certo.
+Quinto: git pull ( o git pull vai no repositorio on-line e pega tudo que ta la e traz pro pc, deixando os dois iguais, la e no seu computador. pode fazer. tudo ok
+Você sabe oq seria a branch??? é tipo uma ramificação, um caminho, dentro tem os commit que são "ocorridos", pode ter uma branch puxando a outra. só lembro disso.blz
+Sexto: enão ele ta pedindo pra vc criar uma. Lembra sempre, vc não trabalha na master. ela é seu tronco e as branchs os galhos, vc so trabalha nos galhos, se tiver
+escrito master no final da linha, ta errado. então cria a branch q ele ta pedindo.Viu lá, agora vc esta no ganho, e agora sim vc pode criar as pastas.
+Voce sabe oq o git checout -b faz?
+não sei.. ele cria uma pasta? não, ele cria a branch (galho) e ja entra nela. quando vc deu o entrer ele criou e ja mudou o nome para quinzena1-aula05 no final dalinha.
+entendi!! agora se vc der um git branch vai ver as duas, faz ae. Viu, mostrou de cor diferente a branch q vc está, não esta na master, esta na verde.
+então se fosse voltar para a branch master como ele pede no começo do exercicio. Faz 
+agora volta para a branch do exercicio.
+bora criar a pasta que ele ta pedindo ali, pasta cria com outro comando - mkdir nome - vc escolhe como quer o nome, so não pode ter espaco.. entendi
+agora dentro da pasta quinzena1 tem que criar a pasta strings-arrays, então tem que entrar na pasta, lembra como?
+cd,certo?isso cd , se fosse arquivo seria cat
+errei
+de boa, presta atençao, facil arrumar quando vc cria a branch ela vai criando ali dentro tambem, vc cria as pastas, ela cria la dentro tambem, então se errar o nome,
+é so ir na pasta e arrumar, mas tem que tomar cuidado, pra não baguncar as branchs. e quando vc sai da branch as coisas somem, mas não assusta, tipo cada
+branch é um universo paralelo e vc só ve qundo ta dentro. olha so. kkkkkkkkkkkkkkkk só pq falei não sumiu fdp hauhauhauhauhauhauha
+lkkkkkkkkkkkkkkkk mas acontece e vai acontecer com vc não assusta que é normal
+Olha só oq aconteceu. coisa mais normal e muita gente faz Merd. aqui.
+Eu estou dentro da pasta do exercicio, strings-arrays, mas não estou na branch certa. pois estou na master (tronco). muita gente não presta atenção nisso.
+Ate eu fiz isso tambem e errei, ate aprender. tem que entrar na branch do exercicio agora não precisa do -b pq a branch ja existe.
+Viu, a pasta continua a mesma, mas agora vc está na branch correta.entendiii, precisa de atenção mesmo, sim, agora são os exercicios ai vc em que quebrar a cabeça um poouco kkkk
+baixei ele, e zipei. viu como faz sim. não sei se vou ajudar mas tem um atalho pra divir tela quando precisar, windows seta pra esquerda, vai na outra janela e windows seta pra direita. assim:sim rs, eu que gosto de sofre msm kkkkkk
+ kkkkk
+
+blz, terminado de colocar o arquivo na pasta, agora é no vscode.
+pode minimizar o git e so usar ele no final
+pode fazer igual para abrir o git bash oxi, seu vsconde não entrou na telinha, sei q tem como fazer mas não lembro agora kkk
+
+
+vc sempre trabalha no index.js (os exercicios são feito aqui e aparecem no console do navegador, e quando vc clica com o botão direito sobre o index.html
+ele abre o navegador, ai vc aperta F12 para abrir o inspecionar
+esqueci de colocar para salvar automatico
+Agora fez mudanças no index.js, ele aparece no console - botão direito - inspecionar / ou aperta F12.
+
+blz??
+blz, vou até salvar essa box aqui pra caso eu esquecer de algo, amanha eu continuo e tento recuperar tudo no fds.
+mas agradeço aí, irmão por todo trabalho de explicar, slc. vai ser cx logo logo ahhaash kkkkkkk Que isso, estamos no msm barco. tmj. precisou so chamar.
+
+fechou, no fds alcanço vcs e vamos se ajudando hehe, sei que vc ja manja de putras linguagens tb, mas ok
+abração, boa noite ae
