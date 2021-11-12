@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import foto1 from './img/img.jpg';
+import foto2 from './img/centauro.png';
+import foto3 from './img/aguiadourada.jpg';
 
 function App() {
   return (
@@ -9,9 +12,9 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
-          nome="Astrodev" 
-          descricao="Oi, eu sou o Astrodev. Sou o chefe dos alunos da Labenu. Adoro pedir e-mails na sexta-feira e esperar os alunos responderem só para responder com uma bronca e dar mais trabalho para eles."
+          imagem= {foto1}
+          nome="Natã Mendes" 
+          descricao="Olá, eu sou o Natã Mendes. Sou o aluno da Labenu. Sou formado música e CMS de bordo. Sou casado, e meu hobby preferido, além de tocar minhas próprias músicas instrumentais, é assistir fails alheios no YouTube. "
         />
         
         <ImagemButton 
@@ -23,15 +26,15 @@ function App() {
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
-          nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
+          imagem={foto3} 
+          nome="Proteção Águia Dourada" 
+          descricao="Supervisor de equipe"
         />
         
         <CardGrande 
-          imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
+          imagem={foto2} 
+          nome="Centauro" 
+          descricao="Recepcionista Bilíngue" 
         />
       </div>
 
