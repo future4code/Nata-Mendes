@@ -1,15 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import  title from "./styles";
+// import logo from './logo.svg';
+// import './App.css';
+// import  title from "./styles";
 
 
 
-function App() {
-  return (
-    <div className="App">
-      <title>Labefy</title>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App">
+//       <title>Labefy</title>
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+
