@@ -1,23 +1,42 @@
-
+import "./styles.css";
 import React from "react";
-import styled from 'styled-components';
-import AppContainer from "./CharacterListPage/styles";
-import React, {useState} from "react";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 
-const setCurrentPage = (props) => {
-const currentPage [list, setList ] = useState ([])
+export default class App extends React.Component {
+  state = {
+    login: false
+  };
 
+  logar = () => {
+    this.setState({ login: true });
+  };
+
+  logout = () => {
+    this.setState({ login: false });
+  };
+
+  render() {
+    // let pagina = <h1>Página Erro</h1>;
+
+    // if (this.state.login) {
+    //   pagina = <Home onClickLogout={this.logout} />;
+    // } else {
+    //   pagina = <Login onClickLogin={this.logar} />;
+    // }
+
+    let pagina = this.state.login ? (
+      <Home onClickLogout={this.logout} />
+    ) : (
+      <Login onClickLogin={this.logar} />
+    );
+
+    return (
+      <div className="App">
+        <h1>Boa noite, Joy!</h1>
+        <hr />
+        {pagina}
+      </div>
+    );
+  }
 }
-
-
-function App() {
-  return (
-    <AppContainer >
-    <h1> Star wars</h1>
-    <body> evellyn salinha the lima</body>
-     
-    </AppContainer>
-  );
-}
-
-export default App;   
