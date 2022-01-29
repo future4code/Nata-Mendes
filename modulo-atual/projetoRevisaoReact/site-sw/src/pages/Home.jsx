@@ -99,7 +99,7 @@ export default class Home extends React.Component {
 
     return (
       <div>
-        <h1>Home</h1>
+        <h1>Lista de personagem</h1>
         <button onClick={this.irParaLuke}>Luke SkyWalker</button>
         <button onClick={this.irParaC_3PO}>C-3PO</button>
         <button onClick={this.irParaR2}>R2-D2</button> 

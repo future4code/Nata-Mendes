@@ -3,6 +3,8 @@ import React from "react";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 
+
+
 export default class App extends React.Component {
   state = {
     login: false
@@ -33,8 +35,9 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
-        <h1>Boa noite, Joy!</h1>
-        <hr />
+        <h1>Star Wars</h1>
+      
+        {/* <hr /> */}
         {pagina}
       </div>
     );
