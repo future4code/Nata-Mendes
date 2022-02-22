@@ -23,7 +23,7 @@ function retornaArrayInvertido(array) {
 function retornaArrayOrdenado(array) {
   const arrays = array
 
-      return arrays.sort ()
+      return arrays.sort ((a,b)=> a - b);
 }
 
 // EXERCÍCIO 04
