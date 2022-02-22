@@ -28,11 +28,19 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
+  const arrays = array
+  for (let i = 0; i < arrays.length; i++) {
+    if( arrays [i] % 2 === 0 ) {
+    return  array
+    } else { console.log("ímpar")}
+  }
   
 }
 
+
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
+  const arrays = array
  
 }
 
