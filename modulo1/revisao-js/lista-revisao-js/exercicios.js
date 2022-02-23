@@ -29,24 +29,28 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
   const arrays = array
-  for (let i = 0; i < arrays.length; i++) {
-    if( arrays [i] % 2 === 0 ) {
-    return  array
-    } else { console.log("ímpar")}
+  for (let i = 0; i <= arrays.length; i++) {
+    if( arrays[i] % 2 == 0 ) {
+    
+    return  arrays
+    
+    } 
   }
   
 }
-
+ 
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
   const arrays = array
- 
+  Math.pow(arrays)
+ return arrays
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
   
+
 }
 
 // EXERCÍCIO 07
@@ -75,8 +79,23 @@ function retornaChamadaDeFilme(filme) {
 }
 
 // EXERCÍCIO 12
+ 
 function retornaPessoaAnonimizada(pessoa) {
-   
+  const info = {
+    nome: "Astrodev",
+    idade: 25,
+    email: "astrodev@labenu.com.br",
+    endereco: "Rua do Futuro, 4"
+  } 
+
+  const novaInfo = {
+    ...info,
+    nome: "ANÔNIMO"
+    // idade: 27,
+    // email: "chijo@labenu.com.br"
+    // endereco: "Rua dos Bobos, 0"
+  }
+return novaInfo
 }
 
 // EXERCÍCIO 13A
