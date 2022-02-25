@@ -28,40 +28,78 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  const arrays = array
-  for (let i = 0; i <= arrays.length; i++) {
-    if( arrays[i] % 2 == 0 ) {
+  // const arrays = array
+  const pares = []
+  for (let i = 0; i <= array.length-1; i++) {
+    if( array [i] % 2 === 0 ) {
+      pares.push(array [i])
+  
     
-    return  arrays
     
     } 
   }
-  
+  return  pares
 }
  
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-  const arrays = array
-  Math.pow(arrays)
- return arrays
+  const arrayDePares = retornaNumerosPares(array)
+  for (let i = 0; i <= arrayDePares.length-1; i++){
+    arrayDePares[i] = arrayDePares[i]*arrayDePares[i]
+  }
+
+ return arrayDePares
+// console.log(arrayDePares)
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  let numeroMaior = -Infinity
+  for ( let i = 0; i <= array.length-1; i++ ) {
+    if(array [i] > numeroMaior) {
+      numeroMaior = array [i];
+    }
+  }
+    return numeroMaior
+  }
 
-}
+  
+  
+  // if se numero atual é maior q anterior
+  // 
+  
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+  // const num1 = 8
+  // const num2 = 9
+  // const maiorNumero = retornaMaiorNumero (array)
+  // const maiorDivisivelPorMenor = false
+  // if ( maiorNumero % maiorDivisivelPorMenor) {
+  //   maiorDivisivelPorMenor = true
+  // } 
 
+
+  // const objeto = {
+
+  // }
 }
 
 // EXERCÍCIO 08
+
 function retornaNPrimeirosPares(n) {
+  const arrayDeNumerosPares = [];
+  for (let i=0; n > arrayDeNumerosPares.length ; i += 2) {
+    if ( i % 2 === 0) {
+      arrayDeNumerosPares.push(i)
+    }
+  }
+  return arrayDeNumerosPares
    
 }
+
+console.log(retornaNPrimeirosPares(3));
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
@@ -75,27 +113,19 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+  // const filmeNovo = filme
+   return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`
 }
-
 // EXERCÍCIO 12
  
 function retornaPessoaAnonimizada(pessoa) {
-  const info = {
-    nome: "Astrodev",
-    idade: 25,
-    email: "astrodev@labenu.com.br",
-    endereco: "Rua do Futuro, 4"
-  } 
 
   const novaInfo = {
-    ...info,
-    nome: "ANÔNIMO"
-    // idade: 27,
-    // email: "chijo@labenu.com.br"
-    // endereco: "Rua dos Bobos, 0"
+    ...pessoa,
+    nome: "ANÔNIMO"      
   }
 return novaInfo
+
 }
 
 // EXERCÍCIO 13A
