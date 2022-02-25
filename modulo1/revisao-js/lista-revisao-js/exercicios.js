@@ -95,7 +95,7 @@ function retornaNPrimeirosPares(n) {
       arrayDeNumerosPares.push(i)
     }
   }
-  return arrayDeNumerosPares
+  return arrayDeNumerosPares;
    
 }
 
@@ -108,7 +108,14 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  let numeroMaiorr = retornarMaiorNumero(array)
+  let numeroMenor = max(numeroMaiorr)
+  for ( let i = 0; i <= array.length-1; i++ ) {
+    if(array [i] < numeroMenor) {
+      numeroMenor = array [i];
+    }
+    return (numeroMenor , numeroMaiorr)
+}
 }
 
 // EXERCÍCIO 11
@@ -145,6 +152,9 @@ function retornaContasComSaldoAtualizado(contas) {
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
+  const arrays = consultas
+
+  return arrays.sort((a,b) => a - b);
   
 }
 
