@@ -72,20 +72,17 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-  // const num1 = 8
-  // const num2 = 9
-  // const maiorNumero = retornaMaiorNumero (array)
-  // const maiorDivisivelPorMenor = false
-  // if ( maiorNumero % maiorDivisivelPorMenor) {
-  //   maiorDivisivelPorMenor = true
-  // } 
 
-
-  // const objeto = {
-
-  // }
-}
-
+    if ( num2 > num1  ) { 
+     return true;
+    } else if (num1 % num2 == 0){
+      return true;
+    } else if (num2 - num1) {
+     return "15";
+    }
+    //  return retornaObjetoEntreDoisNumeros
+       } 
+    
 // EXERCÍCIO 08
 
 function retornaNPrimeirosPares(n) {
@@ -103,19 +100,28 @@ console.log(retornaNPrimeirosPares(3));
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+  // // if (ladoA + ladoB > ladoC && ladoA + ladoC > ladoB && ladoB + ladoC > ladoA) {
+  // //   console.log ("Os 3 lados formam triangulos");
+  //  if (ladoA == ladoB && ladoA == ladoC ) {
+  //   console.log("Equilátero");
+  // } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+  //   console.log("isósceles");
+  // } else {
+  //   console.log("Escaleno")
+  // }
+  // return classificaTriangulo()
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  let numeroMaiorr = retornarMaiorNumero(array)
-  let numeroMenor = max(numeroMaiorr)
-  for ( let i = 0; i <= array.length-1; i++ ) {
-    if(array [i] < numeroMenor) {
-      numeroMenor = array [i];
-    }
-    return (numeroMenor , numeroMaiorr)
-}
+//   let numeroMaiorr = retornarMaiorNumero(array)
+//   let numeroMenor = max(numeroMaiorr)
+//   for ( let i = 0; i <= array.length-1; i++ ) {
+//     if(array [i] < numeroMenor) {
+//       numeroMenor = array [i];
+//     }
+//     return (numeroMenor , numeroMaiorr)
+// }
 }
 
 // EXERCÍCIO 11
@@ -160,5 +166,12 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
+  const arr = []
+arr.sort(function(a,b) { 
+   arr.push(a,b)
+    return a.birthday.getTime() - b.birthday.getTime() 
+
+});
+return(arr);
    
 }
