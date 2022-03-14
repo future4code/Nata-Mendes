@@ -1,0 +1,59 @@
+/* /* .texto-importante {
+    color:  red;
+    /* background-color: yellow; */
+/* }
+ .texto-nao-importante {
+     color: blue;
+     /* background-color: yellow; */
+ /* } */ 
+
+ /* div {
+     background-color: yellow;
+ } */
+/* 
+ .table-data {
+     background-color:orange;
+ }
+
+ #caiotas{
+     color: red;
+     background-color:orange;
+ }
+
+ #paulinha { 
+     color:green;
+     background-color:orange;
+ }
+
+ #miau {
+     color: blue;
+     background-color:orange;
+ } */ 
+
+#brabo {
+    color: rgb(21, 143, 21);
+}
+
+.primeiro-paragrafo {
+    background-color: red;
+    display: inline;
+    border: 1px solid black;
+}
+
+#segundo-paragrafo {
+    background-color:orange;
+    color: yellow;
+    display: inline;
+    border: 1px solid black;
+}
+button{
+    background-color: blue;
+    color: white
+}
+#p-tirar {
+    display: none;
+}
+
+.unir {
+    display: inline;
+}
