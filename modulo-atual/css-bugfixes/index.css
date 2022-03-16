@@ -1,3 +1,5 @@
+/* exercicio 1
+
 body{
     color: orange;
 }
@@ -11,4 +13,31 @@ h2.texto-com-background {
 #texto-com-outra-cor {
     color: rgb(4, 99, 94);
 
+} */
+
+button:hover {
+    background-color: rgb(177, 50, 50);
+    color: white;
+}
+
+button:active {
+    background-color: rgb(114, 16, 16);
+    color: white;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 30px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(214, 55, 55);
+    color:aliceblue;
+}
+
+#centralize{
+    text-align: center;
+}
+.imagi-no-mei{
+    text-align: center;
 }
