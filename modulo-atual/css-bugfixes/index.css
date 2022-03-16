@@ -1,0 +1,14 @@
+body{
+    color: orange;
+}
+
+
+
+h2.texto-com-background {
+    background-color: yellow;
+}
+
+#texto-com-outra-cor {
+    color: rgb(4, 99, 94);
+
+}
