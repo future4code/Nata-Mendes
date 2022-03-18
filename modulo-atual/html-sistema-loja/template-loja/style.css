@@ -1,0 +1,47 @@
+.help h1 {    
+    display: inline;
+    text-align: center; 
+    background-color: rgb(1, 61, 1);
+    color: red;
+}
+
+:hover .tabela th a {
+    background-color: rgb(10, 116, 33);
+    color:white
+}
+
+.tabela{
+    margin-left: 30px;  
+}
+
+h1 {
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom-right-radius: 19px;
+}
+
+ body{
+    display: inline;
+    text-align: center;
+    background-color: rgb(196, 255, 108);
+}
+
+.paragrafo {
+    color: red;
+    font-size: 25px;
+    background-color: rgb(4, 109, 13);
+    display: inline;
+    border-radius: 10px;
+}
+
+.paragrafo1 {
+    font-size: 25px;
+    margin: 15px auto;
+    width: 200px;}
+
+
+.size{
+    width: 70px;
+    background-color: greenyellow;
+    border-radius: 16px;
+}
