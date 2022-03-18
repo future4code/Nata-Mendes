@@ -5,13 +5,14 @@
     color: red;
 }
 
-:hover .tabela th a {
-    background-color: rgb(10, 116, 33);
-    color:white
+.help h2 {
+    display: inline;
+    text-align: center;
 }
 
 .tabela{
     margin-left: 30px;  
+    color:white
 }
 
 h1 {
@@ -20,9 +21,20 @@ h1 {
     border-bottom-right-radius: 19px;
 }
 
- body{
+ .body{
     display: inline;
     text-align: center;
+    background-color: rgb(196, 255, 108);
+}
+.body1{
+    display: inline;
+    text-align: center;
+    background-color: rgb(196, 255, 108);
+}
+
+.to-left{
+    display: inline;
+    text-align: left;
     background-color: rgb(196, 255, 108);
 }
 
@@ -42,6 +54,51 @@ h1 {
 
 .size{
     width: 70px;
-    background-color: greenyellow;
+    background-color: rgb(198, 255, 108);
     border-radius: 16px;
 }
+
+
+.size1{
+    width: 170px;
+    background-color: rgb(198, 255, 108);
+    border-radius: 50px;
+}
+
+.sizefont{
+    font-size: 35px;
+}
+
+.paragrafo-conteudo{
+    font-size: 40px ;
+    color: rgb(243, 60, 60);
+
+}
+
+:hover.paragrafo-conteudo {
+    color: rgb(18, 129, 3);
+}
+ :active.paragrafo-conteudo {
+     color:rgb(203, 22, 240)
+ }
+
+ .sizefonte{
+     font-size: 25px;
+     
+ }
+
+
+ button {
+     border-radius: 50px;
+     width: 200px;
+     height: 30px;
+     
+ }
+
+ :hover.button{
+     background-color: rgb(163, 111, 211);
+ }
+
+ :active.button{
+     background-color: rgb(83, 10, 151);
+ }
