@@ -50,6 +50,7 @@ h1 {
     background-color: rgb(4, 109, 13);
     display: inline;
     border-radius: 10px;
+    text-align: center;
 }
 
 .paragrafo1 {
@@ -107,4 +108,9 @@ h1 {
 
  :active.button{
      background-color: rgb(83, 10, 151);
+ }
+
+ #header{
+    display: inline;
+    text-align: center;
  }
