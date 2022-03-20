@@ -1,5 +1,5 @@
-/* exercicio 1
-
+/* exercicio 1 */
+/* 
 body{
     color: orange;
 }
@@ -15,7 +15,9 @@ h2.texto-com-background {
 
 } */
 
-button:hover {
+/* exercicio 2 */
+
+/* button:hover {
     background-color: rgb(177, 50, 50);
     color: white;
 }
@@ -40,4 +42,30 @@ button {
 }
 .imagi-no-mei{
     text-align: center;
+} */
+
+*{
+    margin: 0;
+}
+
+header, footer {
+    height: 50px;
+    padding-top: 40px;
+    text-align: center;
+    color: blue;
+    background-color: aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    width: 100%;    
+}
+
+
+footer{
+    bottom: 0;
+}
+
+
+.mostra-texto {
+    height: 60px;
+    padding: 20px;
 }
