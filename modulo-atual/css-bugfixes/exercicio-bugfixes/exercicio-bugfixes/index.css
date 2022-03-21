@@ -45,7 +45,20 @@ div>p:first-child {
     font-size: 20px;
     color: white;
 }
+.botao-comprar:active{
+    color: antiquewhite;
+}
+.botao-comprar:hover{
+    background-color: #ceb10e;
+}
 
+.botao-comprar{
+    border: none;
+}
+
+.botao-voltar:hover{
+    background-color: rgb(233, 215, 215);
+}
 .botao-amarelo:hover {
     background-color: #c44f00;
 }
