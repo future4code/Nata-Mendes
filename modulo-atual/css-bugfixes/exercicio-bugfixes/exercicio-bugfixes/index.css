@@ -19,6 +19,10 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    
 }
 
 button:focus {
@@ -70,6 +74,7 @@ div>p:first-child {
 
 .icone {
     height: 19px;
+    width: 20px;
 }
 
 
@@ -126,6 +131,7 @@ td button {
 .container-do-search {
     margin-top: 20px;
     height: 100px;
+
 }
 
 
@@ -158,4 +164,9 @@ td button {
     width: auto;
     text-align: center;
     padding-top: 100px;
+}
+
+.botao-voltar{
+
+    padding: 1px 18px 1px 18px;
 }
