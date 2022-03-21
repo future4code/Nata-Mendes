@@ -170,3 +170,7 @@ td button {
 
     padding: 1px 18px 1px 18px;
 }
+
+p, td, button, .botao-voltar , ol, li, h2 {
+    font-family: 'Roboto', sans-serif;
+}
