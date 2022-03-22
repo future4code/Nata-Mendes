@@ -1,8 +1,0 @@
-const DetailsPersonagem = (props) => {
-return (
-<div> 
-<button onClick={props.}
-</div>
-)
-
-}
