@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fonth1{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.font {
+ font-family: 'Roboto', sans-serif;
+ font-size: 25px;
+}
+
+.img-nata {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin-bottom: 45px;
+}
+
+.img-logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.div-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.margin-h1-2{
+    color: rgb(20, 160, 202);
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+.margin-h1{
+    color: rgb(7, 102, 131);
+    padding-top: 10px;
+    padding-bottom: 45px;
+    font-size: 60px;
+}
+
+.barra-lateral {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: blueviolet;
+    /* align-items: stretch; */
+
+}
