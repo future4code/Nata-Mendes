@@ -35,7 +35,7 @@
 
 main{
     display: flex;
-     flex-grow: 1;
+     /* flex-grow: 1; */
      justify-content: center;
      align-items: center;
      height: 100vh;
@@ -56,13 +56,13 @@ main{
 }
 
 .margin-h1-2{
-    color: rgb(9, 74, 94);
+    color: rgb(3, 3, 1);
     padding-top: 20px;
     font-size: 60px;
 }
 
 .margin-h1{
-    color: rgb(9, 74, 94);
+    color: rgb(2, 3, 1);
     padding-top: 10px;
     padding-bottom: 45px;
     font-size: 60px;
@@ -76,4 +76,33 @@ main{
     color: orangered;
     margin-top: 30px;
 }
+
+.botao-projeto{
+    width: 90px;
+    height: 35px;
+    color: rgb(40, 40, 189);
+    background-color: rgb(171, 247, 247);
+    /* justify-content: space-between 40px ; */
+    /* display: flex; */
+    /* flex-direction: row; */
+
+}
+body{
+    background-color: rgb(18, 72, 122);
+}
+
+    .alinhardiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 20px 20px 40px
+    }
+
+    .imagem-redes{
+        width: 70px;
+        height: 60px;
+        border-radius: 20px;
+    }
+
 
