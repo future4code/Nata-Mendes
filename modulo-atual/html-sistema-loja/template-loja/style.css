@@ -1,0 +1,116 @@
+.help h1 {    
+    display: inline;
+    text-align: center; 
+    background-color: rgb(1, 61, 1);
+    color: red;
+}
+
+.help h2 {
+    display: inline;
+    text-align: center;
+}
+
+.help1{  
+    
+    display: inline;
+    text-align: center;
+
+}
+.tabela{
+    margin-left: 30px;  
+    color:white
+}
+
+h1 {
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom-right-radius: 19px;
+}
+
+ .body{
+    display: inline;
+    text-align: center;
+    background-color: rgb(196, 255, 108);
+}
+.body1{
+    display: inline;
+    text-align: center;
+    background-color: rgb(196, 255, 108);
+}
+
+.to-left{
+    display: inline;
+    text-align: left;
+    background-color: rgb(196, 255, 108);
+}
+
+.paragrafo {
+    color: red;
+    font-size: 25px;
+    background-color: rgb(4, 109, 13);
+    display: inline;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.paragrafo1 {
+    font-size: 25px;
+    margin: 15px auto;
+    width: 200px;}
+
+
+.size{
+    width: 70px;
+    background-color: rgb(198, 255, 108);
+    border-radius: 16px;
+}
+
+
+.size1{
+    width: 170px;
+    background-color: rgb(198, 255, 108);
+    border-radius: 50px;
+}
+
+.sizefont{
+    font-size: 35px;
+}
+
+.paragrafo-conteudo{
+    font-size: 40px ;
+    color: rgb(243, 60, 60);
+
+}
+
+:hover.paragrafo-conteudo {
+    color: rgb(18, 129, 3);
+}
+ :active.paragrafo-conteudo {
+     color:rgb(203, 22, 240)
+ }
+
+ .sizefonte{
+     font-size: 25px;
+     
+ }
+
+
+ button {
+     border-radius: 50px;
+     width: 200px;
+     height: 30px;
+     
+ }
+
+ :hover.button{
+     background-color: rgb(163, 111, 211);
+ }
+
+ :active.button{
+     background-color: rgb(83, 10, 151);
+ }
+
+ #header{
+    display: inline;
+    text-align: center;
+ }
