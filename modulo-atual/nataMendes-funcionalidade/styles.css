@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* SEÇÃO HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: rgb(204, 26, 13);
+    
+}
+
+.left-home{
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+#toleft{
+    position: absolute;
+    right: 700px;
+    
+}
+
+.inputtoleft{
+    position: absolute;
+    right: 200px;
+    width: 310px;
+    height: 20px;
+}
+.inputtoleft1{
+    position: absolute;
+    right: 00px;
+    width: 310px;
+    height: 20px;
+}
+
+.botoes-direita{
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    margin-top: 17px;
+}
+
+.toright{
+    position: absolute;
+    left: 600px;
+    width: 80px;
+    
+}
+
+.toright1{
+    position: absolute;
+    left: 500px;
+    width: 80px;
+}
