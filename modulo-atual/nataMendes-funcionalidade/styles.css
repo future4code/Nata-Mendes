@@ -91,8 +91,8 @@ header{
 
 body{
     background-image: url("imagens/estadio.png");
-    /* background-repeat: no-repeat; */
-    background-size: 100vw 100vh;    
+    background-repeat: no-repeat;
+    background-size: 1588px 910px;    
 }
 /* SEÇÃO Main */
 
@@ -160,3 +160,23 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
+footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 90px;
+    margin-top: 0px;
+    background-color: rgb(204, 26, 13);
+    grid-template-columns: 50px 40px 50px;
+    column-gap: 40px;
+   
+}
+
+.tamanho-img-footer{
+    border-radius: 100px;
+    width: 72px;
+    height: 60px;
+}
+
