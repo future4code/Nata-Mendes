@@ -33,6 +33,7 @@ main {
 
 .botoes-meunu-vertical {
   list-style-type: none;
+  padding-left: 7px;
 }
 
 .painel-de-videos {
@@ -114,3 +115,12 @@ h4 {
   margin-left: 20px;
 }
 
+.size-photo{
+  width: 28px;
+  height: 28px;
+}
+
+.icone-texto{
+  display: flex;
+  align-items: center;
+}

@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import foto from './imagem/icone home.png';
+import foto1 from './imagem/icone gráfico.png';
+import foto2 from './imagem/botao play.png';
+import foto3 from './imagem/icone check.png';
+import foto4 from './imagem/icone relógio.png';
 
 function App() {
   
@@ -21,12 +26,32 @@ function App() {
         <main>
             <nav className="menu-vertical">
                 <ul>
+                    
+                      <div className='icone-texto'>
+                      <img className='size-photo' src={foto} />
                     <li className="botoes-meunu-vertical">Início</li>
+                    </div>
+
+                    <div className='icone-texto'>
+                    <img className='size-photo' src={foto1} />
                     <li className="botoes-meunu-vertical">Em alta</li>
+                    </div>
+
+                    <div className='icone-texto'>
+                    <img className='size-photo' src={foto2} />
                     <li className="botoes-meunu-vertical">Inscrições</li>
+                    </div>
                     <hr/>
+
+                    <div className='icone-texto'>
+                    <img className='size-photo' src={foto3} />
                     <li className="botoes-meunu-vertical">Originais</li>
+                    </div>
+
+                    <div className='icone-texto'>
+                    <img className='size-photo' src={foto4} />
                     <li className="botoes-meunu-vertical">Histórico</li>
+                    </div>
                 </ul>
             </nav>
 
