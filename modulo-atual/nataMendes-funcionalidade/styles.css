@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* SEÇÃO HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background-color: rgb(204, 26, 13);
+    
+}
+
+.ajuste-img{
+    width: 190px;
+    height: 220px;
+
+}
+
+.left-home{
+    position: relative;
+    margin-bottom: 220px;
+    margin-left: 200px; 
+}
+
+.left-home1{
+    position: relative;
+    margin-top: 16px;
+    
+}
+
+#toleft{
+    position: absolute;
+    right: 550px;
+    /* bottom: 0px; */
+   
+}
+
+.inputtoleft{
+    position: absolute;
+    right: 40px;
+    width: 410px;
+    height: 18px;
+    bottom: 0px;
+}
+.inputtoleft1{
+    position: absolute;
+}
+
+.botoes-direita{
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    margin-top: 17px;
+}
+.ajuste-cart{ 
+    width: 43px;
+    height: 30px;
+    background-color: #fffdfd;
+    border-radius: 4px;
+    
+}
+
+.ajuste-like{
+    width: 33px;
+    height: 33px;
+    border-radius: 3px;
+   
+}
+
+.toright{
+    position: absolute;
+    left: 600px;
+    width: 80px;
+    
+    
+}
+
+.toright1{
+    position: absolute;
+    left: 520px;
+    width: 130px;
+    bottom: 0px;
+   
+}
+
+/* Seção Body  */
+
+body{
+    background-image: url("imagens/estadio.png");
+    background-repeat: no-repeat;
+    background-size: 1588px 910px;    
+}
+/* SEÇÃO Main */
+
+h1{
+    color: white ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h2{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.h1-position{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding-left: 100px;
+    padding-top: 170px;
+    font-size: 25px;
+}
+
+.h1-indice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+.h1-indice1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+} 
+
+#img-clickhere{
+    width: 400px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+
+    
+}
+
+.imagem-card{
+    
+    width: 280px;
+    height: 250px;
+     border-radius: 50px;
+     box-shadow: 2px 2px 5px;
+}
+
+.main1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* SEÇÃO Footer */
+footer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 90px;
+    margin-top: 0px;
+    background-color: rgb(204, 26, 13);
+    grid-template-columns: 50px 40px 50px;
+    column-gap: 40px;
+   
+}
+
+.tamanho-img-footer{
+    border-radius: 100px;
+    width: 72px;
+    height: 60px;
+}
+
