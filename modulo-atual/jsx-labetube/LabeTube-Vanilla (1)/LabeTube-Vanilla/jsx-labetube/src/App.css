@@ -33,16 +33,16 @@ main {
 
 .botoes-meunu-vertical {
   list-style-type: none;
-  padding-left: 7px;
 }
 
 .painel-de-videos {
-  padding-left: 20px;
-  padding-top: 20px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin: 10px;
   flex-grow: 1;
   display: grid;
-  grid-template-columns: repeat(4, 24.8% 0.2%);
-  grid-template-rows: repeat(4, 270px 20px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .media1 {
@@ -97,14 +97,14 @@ main {
 }
 
 
-footer {
+/* footer {
   height: 10%;
   background-color: grey;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
-}
+} */
 
 .box-pagina-principal > img {
   width: 100%;
@@ -115,12 +115,14 @@ h4 {
   margin-left: 20px;
 }
 
-.size-photo{
-  width: 28px;
-  height: 28px;
-}
-
 .icone-texto{
   display: flex;
-  align-items: center;
+  
+  align-items: flex-start;
+}
+
+.tamanho-img{
+  height: 25px;
+  width: 25px;
+  padding-right: 10px;
 }

@@ -6,6 +6,19 @@ import foto1 from './imagem/icone gráfico.png';
 import foto2 from './imagem/botao play.png';
 import foto3 from './imagem/icone check.png';
 import foto4 from './imagem/icone relógio.png';
+import foto5 from './imagem/icone biblioteca.png';
+import CardVideo from './components/CardVideo'
+import BotaoMenu from './components/BotaoMenu';
+import styled from "styled-components";
+
+const Footer = styled.footer `
+height: 10%;
+background-color: grey;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+`;
 
 function App() {
   
@@ -26,75 +39,88 @@ function App() {
         <main>
             <nav className="menu-vertical">
                 <ul>
-                    
-                      <div className='icone-texto'>
-                      <img className='size-photo' src={foto} />
-                    <li className="botoes-meunu-vertical">Início</li>
-                    </div>
+                    <BotaoMenu 
+                    fotos={foto}
+                    texto={'Início'}
+                    />
+                    <BotaoMenu fotos={foto1}
+                    texto={'Em Alta'}
+                    />
+                    <BotaoMenu fotos={foto2}
+                    texto={'Inscrições'}
+                    />
+                    <BotaoMenu fotos={foto3}
+                    texto={'Originais'}
+                    />
 
-                    <div className='icone-texto'>
-                    <img className='size-photo' src={foto1} />
-                    <li className="botoes-meunu-vertical">Em alta</li>
-                    </div>
-
-                    <div className='icone-texto'>
-                    <img className='size-photo' src={foto2} />
-                    <li className="botoes-meunu-vertical">Inscrições</li>
-                    </div>
                     <hr/>
-
-                    <div className='icone-texto'>
-                    <img className='size-photo' src={foto3} />
-                    <li className="botoes-meunu-vertical">Originais</li>
-                    </div>
-
-                    <div className='icone-texto'>
-                    <img className='size-photo' src={foto4} />
-                    <li className="botoes-meunu-vertical">Histórico</li>
-                    </div>
+                    <BotaoMenu fotos={foto5}
+                    texto={'Biblioteca'}
+                    />
+                    <BotaoMenu fotos={foto4}
+                    texto={'Histórico'}
+                    />
+                   
                 </ul>
             </nav>
-
+    
             <section className="painel-de-videos">
-                <div className="box-pagina-principal media1" onClick={reproduzVideo}>
-                    <img  src="https://picsum.photos/400/400?a=1 " alt=""/>
-                    <h4>{titulo}</h4>
-                   
-                </div>
-                <div className="box-pagina-principal media2" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=2 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media3" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=3 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media4" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=4 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media5" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=5 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media6" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=6 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media7" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=7 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
-                <div className="box-pagina-principal media8" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=8 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
+
+                <CardVideo 
+                link={'https://api.lorem.space/image/game?w=150&h=220'}
+                texto={'Vídeo Jogo 1'}
+                reproduzVideo={reproduzVideo}
+                />
+                
+                <CardVideo 
+                link={'https://api.lorem.space/image/game?w=150&h=220&hash=8B7BCDC2'}
+                texto={'Vídeo Jogo 2'}
+                reproduzVideo={reproduzVideo}
+                />
+                
+                <CardVideo 
+               link={'https://api.lorem.space/image/game?w=150&h=220&hash=500B67FB'}
+               texto={'Vídeo Jogo 3'}
+               reproduzVideo={reproduzVideo}
+               />
+
+                <CardVideo
+                link={'https://api.lorem.space/image/game?w=150&h=220&hash=4F32C4CF'}
+                texto={'Vídeo Jogo 4'}
+                reproduzVideo={reproduzVideo}
+                />
+
+                <CardVideo
+                 link={'https://api.lorem.space/image/game?w=150&h=220&hash=225E6693'}
+                 texto={'Vídeo Jogo 5'}
+                 reproduzVideo={reproduzVideo}
+                 />
+
+                <CardVideo 
+                link={'https://api.lorem.space/image/game?w=150&h=220&hash=9D9539E7'}
+                texto={'Vídeo Jogo 6'}
+                reproduzVideo={reproduzVideo}
+                />
+
+                <CardVideo 
+                link={'https://api.lorem.space/image/game?w=150&h=220&hash=BDC01094'}
+                texto={'Vídeo Jogo 7'}
+                reproduzVideo={reproduzVideo}
+                />
+
+                <CardVideo 
+                link={'https://api.lorem.space/image/game?w=150&h=220&hash=7F5AE56A'}
+                texto={'Vídeo Jogo 8'}
+                reproduzVideo={reproduzVideo}
+                />
+              
+
             </section>
         </main>
 
-        <footer>
+        <Footer>
             <h4>Oi! Eu moro no footer!</h4>
-        </footer>
+        </Footer>
     </div>
  
     </div>
