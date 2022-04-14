@@ -11,7 +11,8 @@ import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
 const PostContainer = styled.div`
   border: 1px solid gray;
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  justify-content: space-between;
 `
 
 const PostHeader = styled.div`
@@ -48,8 +49,22 @@ class Post extends React.Component {
     numeroComentarios: 0
   }
 
+  
+
   onClickCurtida = () => {
+    this.setState({
+      curtido: true,
+      numeroCurtidas: this.state.numeroCurtidas + 1
+    })
     console.log('Curtiu!')
+  }
+
+  onClickDescurtida = () => {
+    this.setState({
+      curtido: false,
+      numeroCurtidas: this.state.numeroCurtidas - 1
+    })
+    console.log('Descurtiu!')
   }
 
   onClickComentario = () => {
@@ -65,6 +80,11 @@ class Post extends React.Component {
     })
   }
 
+  onCurtidas = (event) => {
+    this.onClickCurtida();
+    this.onClickDescurtida();
+  }
+
   render() {
     let iconeCurtida
 
@@ -72,6 +92,7 @@ class Post extends React.Component {
       iconeCurtida = iconeCoracaoPreto
     } else {
       iconeCurtida = iconeCoracaoBranco
+
     }
 
     //entender melhor esse if abaixo
@@ -92,7 +113,7 @@ class Post extends React.Component {
       <PostFooter>
         <IconeComContador
           icone={iconeCurtida}
-          onClickIcone={this.onClickCurtida}
+          onClickIcone={this.onCurtidas}
           valorContador={this.state.numeroCurtidas}
         />
 
@@ -103,8 +124,12 @@ class Post extends React.Component {
         />
       </PostFooter>
       {componenteComentario}
-    </PostContainer>
-  }
+      </PostContainer>
+    
+ }
+
+
+
 }
 
 export default Post
