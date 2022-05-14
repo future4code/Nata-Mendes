@@ -8,7 +8,7 @@ background-color: lightgreen;
 border-color: azure;
 border-radius: 10px;
 padding: 10px;
-margin: 10px;
+margin: 11px;
 `
 
 
