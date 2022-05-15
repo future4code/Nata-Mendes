@@ -3,14 +3,27 @@ import styled from "styled-components"
 
 
 
-const BalaMensagem = styled.div`
+const BalaoMensagem = styled.div`
 background-color: lightgreen;
 border-color: azure;
 border-radius: 10px;
 padding: 10px;
-margin: 11px;
+margin: 10px;
+`
+const ContainerControles = styled.div`
+margin: 30px 10px;
+display: grid;
+grid-template-columns: 1fr 4fr 1fr;
+column-gap: 10px;
+
 `
 
+
+const ContainerMensagem = styled.div`
+display: flex;
+flex-direction: column;
+
+`
 
 class App extends React.Component {
 state = {
@@ -29,20 +42,36 @@ mudaTexto = (e) => {
 }
 
 enviarMensagem = () => {
-  const novaMensagem = {usario: this.state.usuario, texto:this.state.texto }
+  const novaMensagem = {usuario: this.state.usuario, texto:this.state.texto }
   const novaLista = [...this.state.listaMensagens, novaMensagem]
    this.setState ({listaMensagens: novaLista})
-   console.log(novaLista)
+   this.limpar()
+  //  console.log(novaLista)
+}
+
+limpar = () => {
+  this.setState ({usuario: "", texto: ""})
 }
 
 render() {
-  const componenteMensagem = this.state.listaMensagens.map((balao)=>{})
+  const componenteMensagem = this.state.listaMensagens.map((balao, index, array )=> {
+    return (
+      <BalaoMensagem key={index}>
+       <strong> {balao.usuario} :  </strong> {balao.texto} 
+      </BalaoMensagem>
+    )
+
+  })
 
 
 
   return (
     <div >
       <h1>WhatsLab</h1>
+      <ContainerMensagem>
+      {componenteMensagem}
+      </ContainerMensagem>
+      <ContainerControles>
       <input 
 
       value={this.state.usuario}
@@ -59,6 +88,8 @@ render() {
       placeholder="Mensagem" />
 
       <button onClick={this.enviarMensagem}>Enviar</button>
+      </ContainerControles>
+     
     </div>
   )
 }
