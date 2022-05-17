@@ -26,19 +26,19 @@ height: 100vh;
 
 class App extends React.Component {
   state = {
-    currentPage: "creatorPlaylistForm"
+    currentPage: "CreatorPlaylistForm"
   }
 
 
 
-changePage = (currentPage) => {
-  this.setState({currentPage: currentPage})
+changePage = (currentPages) => {
+  this.setState({currentPage: currentPages})
 
 }
 
   render () {
     const renderCurrentpage = () => {
-      if (this.state.currentPage === "creatorPlaylistForm")
+      if (this.state.currentPage === "CreatorPlaylistForm")
       return <CreatorPlaylistForm/>
       else if (this.state.currentPage === "ManagerPlaylistForm") 
       return  <ManagerPlaylistform/>
