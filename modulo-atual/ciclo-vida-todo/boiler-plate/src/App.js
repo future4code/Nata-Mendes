@@ -37,27 +37,63 @@ class App extends React.Component {
     }
 
   componentDidUpdate() {
-
+    localStorage.setItem("valorInput", this.state.inputValue)
   };
 
   componentDidMount() {
-
+    this.pegarMensagens();
+    const RascunhoInput =  localStorage.getItem("valorInput")
+    this.setState ({inputValue: RascunhoInput})
   };
 
   onChangeInput = (event) => {
-
+    this.setState ({inputValue: event.target.value});
   }
+
+  limpar = () => {
+    this.setState({inputValue: ""})
+  };
 
   criaTarefa = () => {
 
+    const novaTarefa = {
+      id: Date.now(),
+      texto: this.state.inputValue,
+      completa: false
+    }
+
+    const novaLista = [ novaTarefa, ...this.state.tarefas]
+
+    localStorage.setItem("tarefinhas", JSON.stringify(novaLista))
+
+    this.setState({tarefas: novaLista})
+    this.limpar();
+  }
+
+  pegarMensagens = () => {
+    const tarefaNova = JSON.parse(localStorage.getItem("tarefinhas"))
+    this.setState({tarefas: tarefaNova})
   }
 
   selectTarefa = (id) => {
 
+     const  listaNova = this.state.tarefas.map((tarefa) => {
+       if (id === tarefa.id) {
+         const tarefaNova = {
+           ... tarefa, 
+           completa: !tarefa.completa
+         }
+         return tarefaNova
+       } else {
+         return tarefa
+       }
+     })
+     this.setState({tarefas: listaNova})
+     
   }
 
   onChangeFilter = (event) => {
-
+    this.setState ({filtro: event.target.value})
   }
 
   render() {
