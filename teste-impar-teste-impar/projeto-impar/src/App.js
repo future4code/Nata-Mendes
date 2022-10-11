@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import lupa from "./image/lupa.png";
-import fundo from "./image/fundo.png";
-import logo from "./image/logo.png";
+  import React, { useState } from "react";
+  import styled from "styled-components";
+ import lupa from "./image/lupa.png";
+ import fundo from "./image/fundo.png";
+ import logo from "./image/logo.png";
 import Card from "./components/Cards/Cards";
-import Lista from "./lista/Lista.js"
-
-
-const HomeContainer = styled.div`
+  
+  
+  const HomeContainer = styled.div `
     display: flex;
     flex-direction: center;
     margin: 0px;
@@ -16,7 +15,7 @@ const HomeContainer = styled.div`
     
 
   `
-const Header = styled.header`
+  const Header = styled.header `
     display: flex;
     background-color: #5F1478;
     justify-content: space-between;
@@ -31,14 +30,14 @@ const Header = styled.header`
     
  
 `
-const ImgLogo = styled.img`
+  const ImgLogo = styled.img `
     top: 14px;
     left: 24px;
     width: 192px;
     height: 37px;
     margin-left: 15px;
     `
-const ContainerHeader = styled.div`
+  const ContainerHeader = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,7 +54,7 @@ const ContainerHeader = styled.div`
     
 
     `
-const Input = styled.input`
+  const Input = styled.input `
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -73,16 +72,16 @@ const Input = styled.input`
    
   `
 
-const ImageLupa = styled.img`
+  const ImageLupa = styled.img `
     align-items: center;
     width: 30px; 
     height: 30px;
-    margin-left: 1030px;
+    margin-left: 1130px;
     margin-top: 178px;
     position: absolute;
     cursor: pointer;
-  `
-const Body = styled.body`
+  ` 
+  const Body = styled.body `
     display: grid;
     justify-content: center;
     margin: 0px;
@@ -90,16 +89,23 @@ const Body = styled.body`
     width: 100%;
     height: 100vh;
 
+   
+    
+   
+  
   `
-const ContainerBody = styled.body`
+  const ContainerBody = styled.body`
     display: grid;
     justify-content: start;
     width: 100%;
     height: 100vh;
     margin-top: 263px;
-
+    
+   
+  
+ 
   `
-const Titulo = styled.p`
+  const Titulo = styled.p`
   position: absolute;
      display: inline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
@@ -116,8 +122,8 @@ const Titulo = styled.p`
       margin-top: 40px;
       
   `
-
-const BotaoCriarCard = styled.button`
+  
+  const BotaoCriarCard = styled.button `
   position: absolute;
     display: flex;
     flex-direction: column;
@@ -144,71 +150,69 @@ const BotaoCriarCard = styled.button`
 
     `
 
-const ContainerPesquisa = styled.div`
+  const ContainerPesquisa = styled.div `
     width: 100%;
     margin-bottom: 10px;
 
-    `
+    ` 
 
 
 
-export default function App() {
+  export default function App () {
+
+  
+    const [inputBusca, setInputBusca] = useState ("")
+    
+   
 
 
-  const [inputBusca, setInputBusca] = useState("")
-  const [ListaPronta, setListaPronta] =  useState ([Lista])
+    const mudaInput = (e) => {
+      setInputBusca (e.target.value)
+    }
 
-  const mudaInput = (e) => {
-    setInputBusca(e.target.value)
-  }
+  
+      const mudandoPage = () => {
+          alert ("Não foi possível criar novo card!")
+      }
+      
 
-
-  const mudandoPage = () => {
-    alert("Não foi possível criar novo card!")
-  }
-
-
-  return (
-
-
-    <HomeContainer>
-
-      <ContainerHeader>
-        <Header>
-          <ImgLogo src={logo} />
-        </Header>
-
-        <ContainerPesquisa>
-          <ImageLupa src={lupa} ></ImageLupa>
-
-          <Input placeholder="Digite aqui sua busca..." onChange={mudaInput} value={inputBusca} />
-
-        </ContainerPesquisa>
-
-      </ContainerHeader>
-
-      <Body>
-
-        <ContainerBody>
-          <Titulo> Resultado de busca</Titulo>
-          <BotaoCriarCard onClick={mudandoPage}> Novo card</BotaoCriarCard>
-      {ListaPronta.map((item)=> {
         return (
-        <Card lista={item}/>
-        )
-      })}
-          
-        </ContainerBody>
 
-      </Body>
+       
+            <HomeContainer>
+
+  <ContainerHeader>
+  <Header>
+  <ImgLogo src={logo}/>
+  </Header>
+  
+     <ContainerPesquisa>
+        <ImageLupa src={lupa} ></ImageLupa>
+  
+        <Input placeholder="Digite aqui sua busca..." onChange={mudaInput} value={inputBusca} />
+
+     </ContainerPesquisa>
+
+  </ContainerHeader>
+
+  <Body>
+  
+    <ContainerBody>
+<Titulo> Resultado de busca</Titulo>
+    <BotaoCriarCard onClick={mudandoPage}> Novo card</BotaoCriarCard>
+
+    <Card/>
+    </ContainerBody>
+   
+  </Body>
 
 
 
-    </HomeContainer>
+  </HomeContainer>
+  
+       
+        
+        );
 
-
-
-  );
-
-};
-
+  };
+  
