@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+<h1 align="center">
+<img src="src/img/pokejoy.png" />
+</h1>
+<h1 align="center">Projeto Pokemon Joy</h1>
+<img src=>
+<h2 align="center">Site: Personagens pokemon </h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+<h3 align="center">
+<a href=""> acessar demonstração do site</a>
+</h3>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Índice
+- [Sobre](#-sobre)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Como Baixar o projetos](#-como-baixar-o-projeto)
+- [Funcionalidades do projeto](#-funcionalidades-do-projeto)
+---
 
-### `npm start`
+## 📃 Sobre
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Este projeto tem como finalidade o desenvolvimento prático e a apresentação de um site de personagens de pokemon para conclusão do curso de Web fullStack da instituição de ensino Labenu.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 💻 Tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### O projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm run build`
+* Css 
+* Javascript
+* React.js
+* Hooks (UseStates e UseEffect)
+* LocalStorage
+* useContext
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Como baixar o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+# clonar repositório
+$ git clone (link do repo)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Entrar no diretório
+$ cd Nata-Mendes
 
-### `npm run eject`
+# Entrar nas dependências
+$ cd projeto-pokedex
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Entrar nas dependências
+$ cd pokedex
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Abrir o terminal Vs code 
+$ code .
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Instalar as depedências
+$ npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#Iniciar o projeto
+$ npm run start
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔗 Funcionalidades do Projeto
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Passo a passo:
+<br>
 
-### Analyzing the Bundle Size
+- *Barra de pesquisa*:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+É um input ligado aos personagens, que possibilita o usuário procurar por seus nomes e ao apertar o botão rederiza apenas o personagem digitado.
 
-### Making a Progressive Web App
+<img src="src/img/barra-pesquisa.png"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+- *Botão pesquisar:*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Uma tag "button" ligado ao input e aos personagens que possibilita ao usuário causar ação no texto digitado no input. 
 
-### Deployment
+<img src="src/img/botao-pesquisa.png"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+- *Personagens:*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Os personagens foram puxados da Api "PokeApi" e renderizados na tela com suas carecteristicas. 
+
+<img src="src/img/personagens.png"/>
+
+---
+
+*Botão like:*
+
+É uma tag "buttom" com a funcionalidade Onclick que ao usuário clicar no botão a imagem se alterna entre coração preenchido que conta um like no contador e coração vazio retira a marcação do usuário. 
+
+<img src="src/img/botao-like.png"/>
+
+* Contador de like:*
+
+Ao usuário apertar o coração/botãolike ele contabiliza quantos personagens o usuário marcou, destacando - os.  
+
+<img src="src/img/contador-de-like.png"/>
+
+## Apresentação  aluna da turma Joy 
+
+# <h3 align="center">Desenvolvido por *Natã de Lima Mendes*  </h3>
