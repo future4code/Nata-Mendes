@@ -48,7 +48,7 @@ $ git clone (link do repo)
 $ cd Nata-Mendes
 
 # Entrar nas dependências
-$ cd projeto-pokedex
+$ cd modulo-atual/projeto-pokedex
 
 # Entrar nas dependências
 $ cd pokedex
