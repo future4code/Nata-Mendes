@@ -42,7 +42,7 @@
 
 bash
 # clonar repositório
-$ git clone (link do repo)
+$ git clone (https://github.com/future4code/Nata-Mendes.git)
 
 # Entrar no diretório
 $ cd Nata-Mendes
