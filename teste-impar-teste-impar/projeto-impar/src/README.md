@@ -42,10 +42,10 @@
 
 ```bash
 # clonar repositório
-$ git clone https://github.com/EvellySales/teste-impar.git
+$ git clone https://github.com/future4code/Nata-Mendes
 
 # Entrar no diretório
-$ cd teste-impar
+$ cd Nata-Mendes/teste-impar-teste-impar
 
 # Entrar nas dependências
 $ cd projeto-impar
@@ -95,4 +95,4 @@ $ npm run start
 -  Botão lupa e input pesquisar 
 - Separar estilização no componente styled.
 
-# <h3 align="center">Desenvolvido por **Evelly Sales**  </h3>
+# <h3 align="center">Desenvolvido por **Natã Mendes**  </h3>
