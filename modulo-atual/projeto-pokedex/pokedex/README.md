@@ -7,7 +7,7 @@
 
 ---
 <h3 align="center">
-<a href=""> acessar demonstração do site</a>
+<a href="http://projeto-pokedex-case.surge.sh/"> acessar demonstração do site</a>
 </h3>
 
 ---
