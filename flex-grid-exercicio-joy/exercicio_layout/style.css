@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icone-e-texto {
+    display: flex ;
+    /* align-items cuida do eixo transversal */
+    align-items: center;
+}
+
+.icone {
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+}
+
+header {
+    background-color: mediumvioletred;
+    display: flex;
+    /* justify-content cuida do eixo principal */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 60px;
+}
+
+.conteudo {
+    display: flex;
+    width: 100vw;
+}
+
+nav {
+    background-color: #f2d0e0;
+    width: 240px;
+    padding: 0 8px;
+}
+
+.botao-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+/* .icone-texto-nav {
+    flex-grow: 1;
+} */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin: 12px;
+    flex-grow: 1
+}
+
+.card-produto {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 5px darkgray
+}
+
+.titulo-card {
+    margin: 8px 0
+}
+
+.imagem-card {
+    width: 100%;
+}
+footer {
+    background-color: mediumvioletred;
+    height: 60px;
+    /* Centralização com Flex */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* Centralização de Grid */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
