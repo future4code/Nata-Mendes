@@ -20,7 +20,7 @@ const InputsContainer = styled.div`
 
 class App extends React.Component {
     state = {
-      tarefas: [
+      tarefas: [        
         {
           id: Date.now(),
           texto: 'Texto da primeira tarefa',
